@@ -5,3 +5,7 @@
   --mainWhite:#fff
   --Dark:#222
 }
+
+body{
+  background: var(--mainBrown);
+}
