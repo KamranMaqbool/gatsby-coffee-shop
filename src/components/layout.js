@@ -5,24 +5,25 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react"
-import PropTypes from "prop-types"
-// import "./layout.css"
-import Navbar from "./Globals/Navbar"
-import './bootstrap.min.css'
+import React from "react";
+import PropTypes from "prop-types";
+import "./layout.css";
+import Navbar from "./Globals/Navbar";
+import Info from "./Home/info";
+import "./bootstrap.min.css";
 
 const Layout = ({ children }) => {
-
   return (
     <>
       <Navbar />
       <main>{children}</main>
+      <Info />
     </>
-  )
-}
+  );
+};
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-}
+  children: PropTypes.node.isRequired
+};
 
-export default Layout
+export default Layout;
