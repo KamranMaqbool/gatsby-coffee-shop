@@ -4,15 +4,15 @@ import BackgroundSection from "../components/Globals/BackgroundSection.js";
 
 import Layout from "../components/layout";
 
-const IndexPage = ({ data }) => (
+const AboutPage = ({ data }) => (
   <Layout>
-    <BackgroundSection img={data.img.childImageSharp.fluid} title="k company here" styleClass="default-background"/>
+    <BackgroundSection img={data.img.childImageSharp.fluid} title="k-company About" styleClass="about-background"/>
   </Layout>
 );
 
 export const query = graphql`
   {
-    img: file(relativePath: { eq: "default-background.jpeg" }) {
+    img: file(relativePath: { eq: "about-background.jpeg" }) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid_tracedSVG
@@ -21,4 +21,4 @@ export const query = graphql`
     }
   }
 `;
-export default IndexPage;
+export default AboutPage;
