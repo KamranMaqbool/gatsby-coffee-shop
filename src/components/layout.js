@@ -12,6 +12,7 @@ import Navbar from "./Globals/Navbar";
 // import Footer from "./Globals/footer";
 import Footer from "./Globals/Footer";
 import Info from "./Home/info";
+import Menu from "./Home/Menu.js";
 import "./bootstrap.min.css";
 
 const Layout = ({ children }) => {
@@ -20,6 +21,7 @@ const Layout = ({ children }) => {
       <Navbar />
       <main>{children}</main>
       <Info />
+      <Menu />
       <Footer/>
     </>
   );
